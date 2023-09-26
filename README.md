@@ -4,6 +4,26 @@ The project is a TO-DO list application built using Django, a Python web framewo
 It incorporates user authentication to ensure secure access to user-specific tasks. Users can register an account, log in, and manage their tasks by creating, updating, and deleting them. 
 The application includes access control to protect user data. With this project, users can effectively organize and track their tasks while maintaining the privacy and security of their information.
 
+How-To
+To run the TO-DO list application with user authentication, follow these steps:
+1.	Install Python: Ensure that Python is installed on your system. You can download the latest version of Python from the official Python website (https://www.python.org) and follow the installation instructions.
+2.	Install Django: Open a terminal or command prompt and run the following command to install Django using pip, the Python package manager:
+Copy
+   pip install django
+3.	Download the project: Download the project files or clone the repository from the source where the TO-DO list application with user authentication is hosted.
+4.	Navigate to the project directory: Open a terminal or command prompt and navigate to the directory where you downloaded or cloned the project.
+5.	Set up the database: By default, Django uses SQLite as the database backend. Run the following command to create the necessary database tables:
+Copy
+   python manage.py migrate
+6.	Create a superuser: To access the admin panel and manage users, create a superuser account by running the following command and following the prompts:
+  		 python manage.py createsuperuser
+7.	Run the development server: Start the development server by running the following command:
+   	python manage.py runserver
+8.	Access the application: Open a web browser and visit http://localhost:8000 to access the TO-DO list application.
+9.	Register and log in: Create a new account by clicking on the "Register" link and providing the required information. After registration, log in using your credentials.
+10.	Manage tasks: Once logged in, you can create, update, and delete tasks in the TO-DO list application.
+By following these steps, you should be able to run the TO-DO list application with user authentication locally on your machine.
+
 
 Authentication flow:
 1.	User Registration:
